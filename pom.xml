@@ -41,7 +41,7 @@
       </plugins>
     </pluginManagement>
      <plugins>
-        <plugin>
+         <plugin>
     <groupId>org.apache.maven.plugins</groupId>
     <artifactId>maven-deploy-plugin</artifactId>
    </plugin>
@@ -53,7 +53,7 @@
 					<target>1.8</target>
 				</configuration>
 	</plugin>
-
+	
       <plugin>
         <artifactId>maven-war-plugin</artifactId>
         <version>3.2.1</version>
@@ -69,10 +69,11 @@
       </plugin>
     </plugins>
   </build>
-<distributionManagement>
+	<distributionManagement>
     <repository>
       <id>nexus-snapshots</id>
       <url>http://18.117.238.17:8081/repository/suraj-maven/</url>
     </repository>
   </distributionManagement>
+
 </project>
