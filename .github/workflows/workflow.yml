@@ -13,3 +13,11 @@ jobs:
     steps: 
     - name: checkout
       uses:  actions/checkout@v4
+
+         
+    -  name: Lint Code Base
+       uses: super-linter/super-linter@v5
+       env:
+          VALIDATE_ALL_CODEBASE: false
+          DEFAULT_BRANCH: main
+          GITHUB_TOKEN: ${{ secrets.VERT_SURAJ_TOKEN1 }}
