@@ -21,6 +21,11 @@ jobs:
           VALIDATE_ALL_CODEBASE: false
           DEFAULT_BRANCH: main
           GITHUB_TOKEN: ${{ secrets.VERT_SURAJ_TOKEN1 }}
+        
+    -  name: Initialize CodeQL
+       uses: github/codeql-action/init@v2
+       with: 
+         languages: java
 
     -  name: setup java
        uses: actions/setup-java@v3
